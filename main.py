@@ -4,7 +4,7 @@ app = Flask(__name__) #objekts Flask
 
 @app.route("/")
 def index():
-    render_template("index.html")
+    return render_template("index.html")
 
 @app.route("/about")
 def about():
